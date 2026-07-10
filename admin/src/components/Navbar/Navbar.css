@@ -1,0 +1,10 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.logo {
+    width: clamp(40px, 20%, 100px); /* responsive range between 40px and 100px */
+}
