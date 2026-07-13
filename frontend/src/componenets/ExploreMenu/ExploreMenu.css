@@ -1,0 +1,84 @@
+/* General Styling */
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .explore-menu h1 {
+    font-weight: 500;
+    color: rgb(71, 66, 66);
+  }
+  
+  .explore-menu-text {
+    max-width: 60%;
+    color: rgb(96, 94, 92);
+  }
+  
+  /* Menu List */
+  .explore-menu-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .explore-menu-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Menu Item */
+  .explore-menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  /* Active State */
+  .explore-menu-item.active {
+    background-color: rgba(255, 99, 71, 0.2); /* ✅ Light Tomato Background */
+    border: 4px solid tomato; /* ✅ Border to highlight selection */
+    padding: 20px; /* ✅ Adds extra padding */
+    border-radius: 15px; /* ✅ Rounded effect */
+  }
+  
+  /* Image Styling */
+  .explore-menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .explore-menu-item.active img {
+    border: 3px solid tomato; /* ✅ Makes image pop */
+  }
+  
+  /* Menu Item Text */
+  .explore-menu-item p {
+    color: rgb(153, 70, 70);
+    font-size: max(1.4vw, 16px);
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Horizontal Line */
+  .explore-menu hr {
+    height: 2px;
+    border: none;
+    margin: 10px 0;
+    background-color: aliceblue;
+  }
+  

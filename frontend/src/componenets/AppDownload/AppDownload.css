@@ -1,0 +1,28 @@
+.app-download {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .app-download-text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .app-download-platforms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .app-download-btn {
+    width: 160px; /* Same size for both buttons */
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .app-download-btn:hover {
+    transform: scale(1.1);
+  }
+  

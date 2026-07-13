@@ -1,0 +1,90 @@
+/* Background overlay */
+.login-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup container */
+.login-popup-container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    text-align: center;
+}
+
+/* Close button */
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Title */
+.login-popup-title h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Input fields */
+.login-popup-inputs input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: tomato;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: rgb(162, 58, 40);
+}
+
+/* Toggle between Sign In / Sign Up */
+.toggle-login {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #35485e;
+    cursor: pointer;
+}
+
+.toggle-login:hover {
+    text-decoration: underline;
+}
+/* Close button (X) */
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #d35b5b;
+}
+
+.close-icon:hover {
+    color: rgb(158, 85, 85);
+}

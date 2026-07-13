@@ -1,0 +1,190 @@
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar-logo {
+  width: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  font-size: 18px;
+  color: rgb(96, 94, 92);
+}
+
+.navbar-menu li {
+  cursor: pointer;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-search {
+  width: 30px;
+  height: auto;
+}
+.bag-container {
+  position: relative;
+  display: inline-block;
+}
+
+.dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.navbar-bag {
+  width: 30px; /* Adjust to your icon size */
+  height: 30px;
+}
+
+.navbar button {
+  background: transparent;
+  color: rgb(74, 73, 73);
+  font-size: 16px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid tomato;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background: tomato;
+  color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  background: black;
+  height: 3px;
+  width: 25px;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+.bar.open:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-menu {
+      display: none;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+
+  .mobile-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .mobile-menu.open {
+      display: flex;
+  }
+}
+
+/* Profile Dropdown Styles */
+.navbar-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Dropdown */
+.nav-profile-dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: #fff;
+  padding: 10px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1001;
+  width: 150px;
+}
+
+.nav-profile-dropdown li {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  cursor: pointer;
+  color: #333;
+}
+
+.nav-profile-dropdown li:hover {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+
+.nav-profile-dropdown p {
+  margin-left: 8px;
+}
